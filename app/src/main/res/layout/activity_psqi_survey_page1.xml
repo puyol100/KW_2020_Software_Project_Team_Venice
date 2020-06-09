@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_survey_page1">
+
+    <TextView
+        android:id="@+id/psqi_q1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="1. 지난 한달 동안, 보통 밤 몇 시 쯤 취침하셨습니까?"
+        android:fontFamily="@font/tcb"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/psqi_a1_hour"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/psqi_q1"
+        android:gravity="center_horizontal"
+        android:hint="시간" />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="45dp"
+        android:text="시"
+        android:id="@+id/text1"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/psqi_q1"
+        android:layout_toRightOf="@+id/psqi_a1_hour"
+        />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/psqi_a1_min"
+        android:layout_below="@+id/psqi_q1"
+        android:layout_toRightOf="@+id/text1"
+        android:hint="분" />
+    <TextView
+        android:id="@+id/psqi_q2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="2. 지난 한달 동안, 각 밤마다 누워서 잠이 들 때까지 얼마만큼의 시간이 걸렸습니까?"
+        android:fontFamily="@font/tcb"
+        android:layout_below="@+id/psqi_a1_hour"
+        android:textAllCaps="false"
+        android:layout_marginTop="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/psqi_a2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/psqi_q2"
+        android:hint="걸리는 시간(분) :" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="다음"
+        android:layout_marginTop="30dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:id="@+id/psqi_next"
+        android:layout_below="@+id/psqi_a2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/psqi_page1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/psqi_next"
+        android:layout_marginTop="33dp"
+        android:text="1/9"
+        android:textSize="15sp"
+        android:layout_marginLeft="320dp"/>
+</RelativeLayout>

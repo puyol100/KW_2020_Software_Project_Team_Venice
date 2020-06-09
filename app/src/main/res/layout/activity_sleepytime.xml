@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".sleepytime">
+
+    <TextView
+        android:text="I have to wake up at..."
+        android:textSize="30sp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/text"
+        android:fontFamily="@font/tcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"/>
+
+    <TimePicker
+        android:id="@+id/TimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:timePickerMode="spinner"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="63dp" >
+
+        <Spinner
+            android:id="@+id/hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/am_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:textColor="#fff"
+        android:text="calculate"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+

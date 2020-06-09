@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Subactivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+
+        <Button
+            android:fontFamily="@font/tcb"
+            android:id="@+id/Sleep_apnea_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info2"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/info2"
+            android:text="Sleep Info"
+            android:textAllCaps="false"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#000" />
+
+        <Button
+            android:fontFamily="@font/tcb"
+            android:id="@+id/Record_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/record2"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/record2"
+            android:text="Record"
+            android:textAllCaps="false"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp" >
+
+        <!--Button
+            android:fontFamily="@font/tcb"
+            android:id="@+id/graph_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/graph2"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/graph2"
+            android:text="Graph"
+            android:textAllCaps="false"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#000" /-->
+        <Button
+            android:id="@+id/psqi_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/interview2"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/tcb"
+            android:text="PSQI"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#000" />
+
+        <Button
+            android:fontFamily="@font/tcb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alarm2"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:textAllCaps="false"
+            android:text="Alarm"
+            android:gravity="bottom|center_horizontal"
+            android:id="@+id/alarm" />
+
+    </LinearLayout>
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/psqi_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/interview2"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/tcb"
+            android:text="PSQI"
+            android:gravity="bottom|center_horizontal"
+            android:textColor="#000" />
+
+        <Button
+            android:fontFamily="@font/tcb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sleepy2"
+            android:layout_marginLeft="30dp"
+            android:textColor="#000"
+            android:text="Sleepytime"
+            android:id="@+id/sleepytime_Button"
+            android:gravity="bottom|center_horizontal"
+            android:textAllCaps="false" />
+
+    </LinearLayout-->
+
+    <Button
+        android:fontFamily="@font/tcb"
+        android:background="@drawable/logout"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:gravity="bottom|center_horizontal"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:id="@+id/logoutbutton" />
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_survey_page7">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/tcb"
+        android:layout_height="60dp"
+        android:text="각 아래의 문제마다, 가장 적당한 답 하나를 골라 주십시오. 모든 질문에 대답하여 주십시오."
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/psqi_q9"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="9. 지난 한 달간, 일을 해내는 데 충분한 의욕을 지니는 데 있어 얼마나 큰 문제를 가졌습니까?"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/q9_checkBox1"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q9"
+        android:onClick="onChecked_q9"
+        android:text="아무 문제 없었다" />
+
+    <CheckBox
+        android:id="@+id/q9_checkBox2"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q9_checkBox1"
+        android:onClick="onChecked_q9"
+        android:text="단지 작은 문제만 있었다" />
+
+    <CheckBox
+        android:id="@+id/q9_checkBox3"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q9_checkBox2"
+        android:onClick="onChecked_q9"
+        android:text="어느정도 문제가 있었다" />
+
+    <CheckBox
+        android:id="@+id/q9_checkBox4"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q9_checkBox3"
+        android:onClick="onChecked_q9"
+        android:text="아주 큰 문제가 있었다" />
+
+
+    <TextView
+        android:id="@+id/psqi_q10"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q9_checkBox4"
+        android:text="10. 동거자나 한 방에서 같이 자는 사람이 있습니까?"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/q10_checkBox1"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q10"
+        android:onClick="onChecked_q10"
+        android:text="아무도 없다" />
+
+    <CheckBox
+        android:id="@+id/q10_checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_below="@+id/q10_checkBox1"
+        android:onClick="onChecked_q10"
+        android:text="다른 방에 있다" />
+
+    <CheckBox
+        android:id="@+id/q10_checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q10_checkBox2"
+        android:fontFamily="@font/tcb"
+        android:onClick="onChecked_q10"
+        android:text="같은 방에 있으나 다른 침대를 쓴다" />
+
+    <CheckBox
+        android:id="@+id/q10_checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q10_checkBox3"
+        android:onClick="onChecked_q10"
+        android:fontFamily="@font/tcb"
+        android:text="같은 침대에 쓴다" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="다음"
+        android:background="#000"
+        android:textColor="#fff"
+        android:id="@+id/psqi_next"
+        android:fontFamily="@font/tcb"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/q10_checkBox4"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/psqi_page7"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/psqi_next"
+        android:layout_marginTop="33dp"
+        android:text="7/9"
+        android:textSize="15sp"
+        android:layout_marginLeft="320dp"/>
+
+</RelativeLayout>

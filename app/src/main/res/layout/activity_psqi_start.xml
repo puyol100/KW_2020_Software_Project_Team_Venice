@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_start">
+
+    <TextView
+        android:id="@+id/psqi_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/back"
+        android:fontFamily="@font/tcb"
+        android:text="다음 질문들은 오직 지난 한 달 이내의 여러분의 평소 수면에 관한 것입니다.\n 여러분의 대답은 대다수의 지난 한 달 이내의 낮과 밤에 관한 가장 정확한 대답을 나타내야 합니다.\n 모든 질문에 대답하여 주십시오."
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/psqi_explain"
+        android:text="시작하기"
+        android:fontFamily="@font/tcb"
+        android:background="#000"
+        android:textColor="#fff"
+        android:id="@+id/psqi_start"
+        android:layout_marginTop = "40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

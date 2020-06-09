@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_check">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/tcb"
+        android:id="@+id/show_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "5점을 기준으로 5 이상은 수면이 방해받고 있는 것으로, 점수가 높을수록 수면의 질이 낮음을 의미합니다."
+        android:textSize="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/show_text2"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "귀하의 점수는"
+        android:layout_below="@+id/show_text1"
+        android:textSize="19dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/show_result"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/show_text2"
+        android:layout_marginTop="20sp"
+        android:textSize="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subactivity">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="설문 시작"
+        android:background="#000"
+        android:fontFamily="@font/tcb"
+        android:textColor="#fff"
+        android:id="@+id/start_survey"
+        android:textAllCaps="false"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/start_survey"
+        android:text="점수 확인"
+        android:fontFamily="@font/tcb"
+        android:background="#000"
+        android:textColor="#fff"
+        android:id="@+id/check_survey"
+        android:textAllCaps="false"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

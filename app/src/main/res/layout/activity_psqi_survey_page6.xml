@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_survey_page6">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="각 아래의 문제마다, 가장 적당한 답 하나를 골라 주십시오. 모든 질문에 대답하여 주십시오."
+        android:textAllCaps="false"
+        android:fontFamily="@font/tcb"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/psqi_q6"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="6. 지난 한 달간, 여러분의 수면의 질을 전반적으로 평가하자면 어떻게 매기겠습니까?"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/q6_checkBox1"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q6"
+        android:onClick="onChecked_q6"
+        android:text="아주 좋다 " />
+
+    <CheckBox
+        android:id="@+id/q6_checkBox2"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q6_checkBox1"
+        android:onClick="onChecked_q6"
+        android:text="대체로 좋다" />
+
+    <CheckBox
+        android:id="@+id/q6_checkBox3"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q6_checkBox2"
+        android:onClick="onChecked_q6"
+        android:text="대체로 나쁘다" />
+
+    <CheckBox
+        android:id="@+id/q6_checkBox4"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q6_checkBox3"
+        android:onClick="onChecked_q6"
+        android:text="아주 나쁘다" />
+
+
+    <TextView
+        android:id="@+id/psqi_q7"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q6_checkBox4"
+        android:text="7. 지난 한 달간, 잠이 들기 위해 얼마나 자주 약을 복용하셨습니까(처방전을 받았거나 처방전 없이 모두)?"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/q7_checkBox1"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q7"
+        android:onClick="onChecked_q7"
+        android:text="지난 한 달간 없었다 " />
+
+    <CheckBox
+        android:id="@+id/q7_checkBox2"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q7_checkBox1"
+        android:onClick="onChecked_q7"
+        android:text="주당 한번 이하" />
+
+    <CheckBox
+        android:id="@+id/q7_checkBox3"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q7_checkBox2"
+        android:onClick="onChecked_q7"
+        android:text="주당 한 두 번" />
+
+    <CheckBox
+        android:id="@+id/q7_checkBox4"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q7_checkBox3"
+        android:onClick="onChecked_q7"
+        android:text="주당 세 번 혹 그 이상" />
+
+
+    <TextView
+        android:id="@+id/psqi_q8"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q7_checkBox4"
+        android:text="8. 지난 한 달간, 운전 중이나 식사를 할 때나 사회적 활동에 참여할 때 얼마나 자주 깨어있는 상태로 있는데에 문제가 있었습니까?"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/q8_checkBox1"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q8"
+        android:onClick="onChecked_q8"
+        android:text="지난 한 달간 없었다 " />
+
+    <CheckBox
+        android:id="@+id/q8_checkBox2"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q8_checkBox1"
+        android:onClick="onChecked_q8"
+        android:text="주당 한번 이하" />
+
+    <CheckBox
+        android:id="@+id/q8_checkBox3"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q8_checkBox2"
+        android:onClick="onChecked_q8"
+        android:text="주당 한 두 번" />
+
+    <CheckBox
+        android:id="@+id/q8_checkBox4"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q8_checkBox3"
+        android:onClick="onChecked_q8"
+        android:text="주당 세 번 혹 그 이상" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="다음"
+        android:fontFamily="@font/tcb"
+        android:id="@+id/psqi_next"
+        android:background="#000"
+        android:textColor="#fff"
+        android:layout_below="@+id/q8_checkBox4"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/psqi_page6"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/psqi_next"
+        android:layout_marginTop="33dp"
+        android:text="6/9"
+        android:textSize="15sp"
+        android:layout_marginLeft="320dp"/>
+
+</RelativeLayout>

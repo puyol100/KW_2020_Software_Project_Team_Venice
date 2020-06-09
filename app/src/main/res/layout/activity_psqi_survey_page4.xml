@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_survey_page4">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="각 아래의 문제마다, 가장 적당한 답 하나를 골라 주십시오. 모든 질문에 대답하여 주십시오."
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:fontFamily="@font/tcb"
+        />
+    <TextView
+        android:id="@+id/psqi_q5"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="5. 지난 한 달 동안, 다음과 같은 이유로 얼마나 자주 잠이 드는데 문제가 있으셨습니까?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp"
+        android:fontFamily="@font/tcb"
+        />
+    <TextView
+        android:id="@+id/psqi_q5_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(d) 숨을 편히 쉬지 못한다."
+        android:layout_below="@+id/psqi_q5"
+        android:textSize="15sp"
+        android:fontFamily="@font/tcb"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q5_d"
+        android:onClick="onChecked_d"
+        android:fontFamily="@font/tcb"
+        android:text="지난 한 달간 없었다" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_below="@+id/d_checkBox1"
+        android:onClick="onChecked_d"
+        android:text="주당 한번 이하" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_checkBox2"
+        android:fontFamily="@font/tcb"
+        android:onClick="onChecked_d"
+        android:text="주당 한 두 번" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox4"
+        android:fontFamily="@font/tcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_checkBox3"
+        android:onClick="onChecked_d"
+        android:text="주당 세 번 혹 그 이상" />
+
+    <TextView
+        android:id="@+id/psqi_q5_e"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:text="(e) 크게 코를 골거나 기침을 한다."
+        android:layout_below="@+id/d_checkBox4"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/e_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_below="@+id/psqi_q5_e"
+        android:onClick="onChecked_e"
+        android:text="지난 한 달간 없었다" />
+
+    <CheckBox
+        android:id="@+id/e_checkBox2"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e_checkBox1"
+        android:onClick="onChecked_e"
+        android:text="주당 한번 이하" />
+
+    <CheckBox
+        android:id="@+id/e_checkBox3"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e_checkBox2"
+        android:onClick="onChecked_e"
+        android:text="주당 한 두 번" />
+
+    <CheckBox
+        android:id="@+id/e_checkBox4"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e_checkBox3"
+        android:onClick="onChecked_e"
+        android:text="주당 세 번 혹 그 이상" />
+
+    <TextView
+        android:id="@+id/psqi_q5_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:text="(f) 오한기운을 심하게 느낀다."
+        android:layout_below="@+id/e_checkBox4"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/f_checkBox1"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psqi_q5_f"
+        android:onClick="onChecked_f"
+        android:text="지난 한 달간 없었다" />
+
+    <CheckBox
+        android:id="@+id/f_checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_below="@+id/f_checkBox1"
+        android:onClick="onChecked_f"
+        android:text="주당 한번 이하" />
+
+    <CheckBox
+        android:id="@+id/f_checkBox3"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/f_checkBox2"
+        android:onClick="onChecked_f"
+        android:text="주당 한 두 번" />
+
+    <CheckBox
+        android:id="@+id/f_checkBox4"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/f_checkBox3"
+        android:onClick="onChecked_f"
+        android:text="주당 세 번 혹 그 이상" />
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:fontFamily="@font/tcb"
+        android:layout_height="55dp"
+        android:text="다음"
+        android:id="@+id/psqi_next"
+        android:background="#000"
+        android:textColor="#fff"
+        android:layout_below="@+id/f_checkBox4"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/psqi_page4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/psqi_next"
+        android:layout_marginTop="33dp"
+        android:text="4/9"
+        android:textSize="15sp"
+        android:layout_marginLeft="320dp"/>
+
+
+
+
+</RelativeLayout>

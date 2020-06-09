@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psqi_survey_page9">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="각 아래의 문제마다, 가장 적당한 답 하나를 골라 주십시오. 모든 질문에 대답하여 주십시오."
+        android:textAllCaps="false"
+        android:fontFamily="@font/tcb"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/psqi_q10_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:text=" (d) 자는 사이 지남력 장애나 착란이 있었다."
+        android:layout_below="@+id/text"
+        android:textSize="15sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:onClick="onChecked_10_d"
+        android:layout_below="@+id/psqi_q10_d"
+        android:text="지난 한 달간 없었다" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox2"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:onClick="onChecked_10_d"
+        android:layout_below="@+id/d_checkBox1"
+        android:text="주당 한번 이하" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox3"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:layout_height="wrap_content"
+        android:onClick="onChecked_10_d"
+        android:layout_below="@+id/d_checkBox2"
+        android:text="주당 한 두 번" />
+
+    <CheckBox
+        android:id="@+id/d_checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tcb"
+        android:onClick="onChecked_10_d"
+        android:layout_below="@+id/d_checkBox3"
+        android:text="주당 세 번 혹 그 이상" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:text="완료"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tcb"
+        android:id="@+id/psqi_end"
+        android:layout_below="@+id/d_checkBox4"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:text="HOME"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tcb"
+        android:id="@+id/psqi_home"
+        android:layout_below="@+id/psqi_end"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/psqi_page9"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/psqi_end"
+        android:layout_marginTop="33dp"
+        android:text="9/9"
+        android:textSize="15sp"
+        android:layout_marginLeft="320dp"/>
+
+</RelativeLayout>
